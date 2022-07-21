@@ -169,6 +169,27 @@ body {
 .blog-icons p {
   margin-left: 10px;
 }
+.view-all{
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  bottom:90px;
+  visibility: hidden;
+}
+.view-all a{
+  text-decoration: none;
+  color:white;
+  background-color: #dd0000;
+  padding: 15px;
+  margin:5px;
+  border-radius: 5px;
+}
+.view-all a:hover{
+  background-color:yellow;
+  color:black;
+  transition: 0.8s;
+}
+
 /*--------- Blog Area Ends -------- */
 
 
@@ -291,4 +312,79 @@ footer hr {
 
   /*-------------- Responsive for tablet------------- */
 
-   @media screen and (min-width:577px) and (max-width:991px) {
+  @media screen and (min-width:577px) and (max-width:992px) {
+
+
+    .head-text p{
+      text-overflow:ellipsis;
+      font-size: 3vw;
+    }
+  
+    .head-section{
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .head-section img{
+      width: 80%;
+      height: 80%;
+      margin-top:20px;
+    }
+  
+    .head-section h1 {
+      font-size: 7vw;
+    }
+  
+    .watch-button {
+      font-size: 3vw;
+    }
+    .information-box{
+      display: flex;
+      flex-direction:column;
+    }
+    .match-information{
+      background-color:white;
+      width:auto;
+    }
+    .upcoming-btn, .group-btn{
+      border:1px solid gray;
+    }
+    .blog-area {
+      display: grid;
+        grid-template-columns: repeat(2, 1fr);}
+
+    .view-all{
+      visibility: visible;
+    }
+  
+  
+  .footer-area{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    padding: 0;
+    margin-top:0px;
+  }
+  .footer h1{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .footer-info{
+    text-align: center;
+  }
+  
+  .social-icons{
+    position:relative;
+    bottom:45px;
+      }
+
+
+    }
+
+/*----------- Media Queries End----------- */
+
+
+
+
+  
